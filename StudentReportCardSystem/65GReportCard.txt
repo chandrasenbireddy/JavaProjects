@@ -1,0 +1,13 @@
+Report card for Chad (ID: 65)
+Subjects and Marks:
+-------------------
+Advanced Math: 99
+-------------------
+Research Methods: 98
+-------------------
+Thesis Writing: 99
+-------------------
+Average: 98.67
+Grade: A
+Thesis title: AI Context Management Enhancement
+Advisor: Dr. Sha

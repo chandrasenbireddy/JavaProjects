@@ -1,6 +1,7 @@
 package JavaProjects.StudentReportCardSystem;
 
 import java.io.FileWriter;
+import java.nio.file.Paths;
 
 public class Student {
     private int id;
@@ -60,7 +61,7 @@ public class Student {
         return report;
     }
     public void saveReportCardToFile(String fileName) {
-        try (FileWriter writer = new FileWriter(fileName, true)) {
+        try (FileWriter writer = new FileWriter(Paths.get("JavaProjects", "StudentReportCardSystem", fileName).toString(), true)) {
             writer.write(getReportCardAsString().toString());
             System.out.println("Report card saved to " + fileName);
             }
