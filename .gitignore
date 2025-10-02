@@ -1,1 +1,13 @@
 *.class
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Build output
+/out/
+/target/
+/build/
+
+# OS junk
+.DS_Store
+Thumbs.db
