@@ -16,20 +16,17 @@ public class CaliculatorCli {
                 System.out.println("Result: " + result);
                 }
                 catch(IllegalArgumentException e){
-                    System.out.println("Error: Invalid operator");
+                    System.out.println("Error: Invalid operator " + e.getMessage());
                 }
             System.out.println("Do you want to perform another calculation? (yes/no)");
             String choice = scanner.next();
             while(!choice.equalsIgnoreCase("yes") && !(choice.equalsIgnoreCase("no"))){
-                System.out.println("Invalid choice, choose agaon");
+                System.out.println("Invalid choice, choose again");
                 choice = scanner.next();
             }
             if(choice.equalsIgnoreCase("no")) {
                 scanner.close();
                 break;
-            }
-            else if (choice.equalsIgnoreCase("yes")) {
-                continue;
             }
         }
     }
@@ -44,7 +41,7 @@ public class CaliculatorCli {
                 case '/':
                     return divide(num1, num2);
                 default:
-                throw new IllegalArgumentException();
+                throw new IllegalArgumentException("send a proper operator +, -, /, * you have entrered: " + operator);
             }
     }
     private static double add(double a, double b) {
