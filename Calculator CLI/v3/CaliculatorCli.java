@@ -30,7 +30,7 @@ public class CaliculatorCli {
             }
         }
     }
-    private static double calculate(double num1, double num2, char operator) {
+    public static double calculate(double num1, double num2, char operator) {
         switch (operator) {
                 case '+':
                     return add(num1, num2);
@@ -44,16 +44,16 @@ public class CaliculatorCli {
                 throw new IllegalArgumentException("send a proper operator +, -, /, * you have entrered: " + operator);
             }
     }
-    private static double add(double a, double b) {
+    public static double add(double a, double b) {
             return a+b;
         }
-    private static double substract(double a, double b) {
+    public static double substract(double a, double b) {
         return a-b;
     }
-    private static double multiply(double a, double b){
+    public static double multiply(double a, double b){
         return a*b;
     }
-    private static double divide(double a, double b) {
+    public static double divide(double a, double b) {
         if(b == 0){
                     System.out.println("Error: Division by zero");
                     return Double.NaN;
